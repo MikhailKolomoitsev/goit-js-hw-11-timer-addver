@@ -14,9 +14,10 @@ export default class CountdownTimer{
         
         this.timerId = setInterval(() => {
         const currentDate = Date.now();
-        const diffTime = target - currentDate;
-        const { days, hours, mins, secs } = CountdownTimer.getAllTimeComponents(diffTime);
-        CountdownTimer.changeLayout({ days, hours, mins, secs }, this.timer);
+            const diffTime = target - currentDate;
+            if(diffTime>=0){ const { days, hours, mins, secs } = CountdownTimer.getAllTimeComponents(diffTime);
+                CountdownTimer.changeLayout({ days, hours, mins, secs }, this.timer);
+            }
     }, 500);
     }
 

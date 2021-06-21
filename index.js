@@ -1,6 +1,5 @@
 import CountdownTimer from "./timer.js"
 
-
 const input = document.querySelector('#start')
 const resetBtn=document.querySelector('#reset')
 input.addEventListener('input', launchCountdown)

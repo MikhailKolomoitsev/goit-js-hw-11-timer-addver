@@ -1,5 +1,3 @@
-import { format, compareAsc } from 'date-fns'
-console.log('helo');
-console.log(format(new Date(2014, 1, 11), 'MM/dd/yyyy'));
-format(new Date(2014, 1, 11), 'MM/dd/yyyy')
-//=> '02/11/2014'
+const dateInput=document.querySelector('.date-input')
+let todayDate = new Date().toISOString().slice(0, 10);
+dateInput.min=`${todayDate}`

@@ -12,9 +12,10 @@ let new1= new CountdownTimer({
 
 function launchCountdown() {
     new1.targetDate=input.value
-    new1.start()
+  new1.start()
 }
 function stopCountdown() {
   new1.stop()
+    input.value=''
 }
 

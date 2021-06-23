@@ -1,4 +1,6 @@
 import CountdownTimer from "./timer.js"
+import dataSet from "./date-maker"
+dataSet()
 
 const input = document.querySelector('#start')
 const resetBtn=document.querySelector('#reset')

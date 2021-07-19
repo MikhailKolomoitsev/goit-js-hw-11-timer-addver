@@ -5,4 +5,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{}],"Focm":[function(require,module,exports) {
 "use strict";var e=r(require("./timer.js")),t=r(require("./date-maker"));function r(e){return e&&e.__esModule?e:{default:e}}(0,t.default)();const u=document.querySelector("#start"),a=document.querySelector("#reset");u.addEventListener("input",c),a.addEventListener("click",i);let n=new e.default({selector:"#timer-1",targetDate:u.value});function c(){n.targetDate=u.value,n.start()}function i(){n.stop(),u.value=""}
 },{"./timer.js":"XCzN","./date-maker":"MrXI"}]},{},["Focm"], null)
-//# sourceMappingURL=/parcel-project-template/src.22a2bd72.js.map
+//# sourceMappingURL=/goit-js-hw-11-timer-addver/src.22a2bd72.js.map

@@ -1,5 +1,5 @@
-import CountdownTimer from "./timer.js"
-import dataSet from "./date-maker"
+import CountdownTimer from "./js/timer.js"
+import dataSet from "./js/date-maker"
 dataSet()
 
 const input = document.querySelector('#start')
